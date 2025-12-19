@@ -80,13 +80,20 @@
     </nav>
 
     <script>
-        document.getElementById("menu-toggle").addEventListener("click", function () {
-            const menu = document.getElementById("mobile-menu");
+        const btn = document.getElementById("menu-toggle");
+        const menu = document.getElementById("mobile-menu");
+        const icons = btn.querySelectorAll("svg");
+
+        btn.addEventListener("click", () => {
             menu.classList.toggle("hidden");
-            menu.classList.toggle("transition-all");
-            menu.classList.toggle("duration-500");
-            menu.classList.toggle("ease-in-out");
-            menu.classList.toggle("opacity-100");
+            icons[0].classList.toggle("hidden");
+            icons[1].classList.toggle("hidden");
+
+            // Toggle page credit movement
+            credit.classList.toggle("translate-y-12");  // slide down
+            credit.classList.toggle("opacity-0");       // fade out
+            credit.classList.toggle("translate-y-0");   // slide up (back)
+            credit.classList.toggle("opacity-100");     // fade in
         });
     </script>
 
@@ -115,9 +122,9 @@
         <p class="text-[#ff0000] text-lg max-w-3xl mx-auto">
             Participation is by invitation only
         </p>
-        <p class="text-[#8b5a2b] text-lg max-w-l mx-auto">
-            contact: neutrino.prl@gmail.com
-        </p>
+        <a href="mailto:neutrino.prl@gmail.com" class="text-[#8b5a2b] underline">
+            neutrino.prl@gmail.com
+        </a>
     </div>
 
     <!-- Programme and Planning Details -->
@@ -167,7 +174,7 @@
                 </div>
                 <div class="py-3 px-6 bg-[#ffe599] font-bold text-center">
                     <span class="text-[#8b5a2b] font-bold">
-                        <p>4. Rikin Kuntar</p>
+                        <p>4. Debashis Pachchar</p>
                     </span>
                 </div>
                 <div class="py-3 px-6 bg-[#f7d154] font-bold text-center">
@@ -180,11 +187,6 @@
                         <p>6. Purvi Giri</p>
                     </span>
                 </div>
-                <div class="py-3 px-6 bg-[#f7d154] font-bold text-center">
-                    <span class="text-[#8b5a2b] font-bold">
-                        <p>7. Supriya Pan</p>
-                    </span>
-                </div>
                 <div class="py-3 px-6 bg-[#ffe599] font-bold text-center">
                     <span class="text-[#8b5a2b] font-bold">
                         <p>8. Richa Prashant Kumar</p>
@@ -194,11 +196,15 @@
         </div>
     </div>
 
-    </div>
     <!-- Webpage Credit -->
-        <p class="fixed bottom-2 right-2 text-[10px] sm:text-xs text-gray-300 bg-black bg-opacity-50 px-2 py-1 rounded-md">
-            Webpage Credit: Divyang Kuntar and Supriya Pan 
-        </p>
+    <div id="page-credit"
+         class="fixed bottom-2 right-2
+                text-[10px] sm:text-xs
+                text-gray-300 bg-black bg-opacity-50
+                px-2 py-1 rounded-md
+                transition-all duration-500 ease-in-out
+                translate-y-0 opacity-100">
+        Webpage Credit: Purvi Giri and Supriya Pan
     </div>
 
     <footer class="w-full py-14">
