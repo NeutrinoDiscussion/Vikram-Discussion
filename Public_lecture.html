@@ -44,11 +44,29 @@
             <br><br>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdbqumVZZC5cz9TsxTCkW3ex9cUbZ83BioVJ6rbRCXk0L0hww/viewform?usp=publish-editor"
                target="_blank"
-              class="inline-block text-blue-700 font-semibold px-4 py-2 rounded-md
-              transition-all duration-300 hover:text-blue-900 hover:scale-105 hover:underline hover:shadow-md
-              focus:outline-none focus:ring-2 focus:ring-blue-300 mb-8">
-               Please click here to register yourself
-            </a>
+              class="inline-block text-blue-700 font-semibold px-4 py-2 rounded-md relative overflow-hidden
+          transform transition-all duration-300 hover:scale-110 cursor-pointer sparkle-link mb-8">
+    Please click here to register yourself
+</a>
+
+<style>
+/* Sparkling moving effect */
+@keyframes sparkle {
+  0%, 100% { text-shadow: 0 0 2px #fff, 0 0 5px #3b82f6, 0 0 10px #60a5fa; }
+  25% { text-shadow: 0 0 5px #fff, 0 0 10px #3b82f6, 0 0 15px #93c5fd; }
+  50% { text-shadow: 0 0 2px #fff, 0 0 5px #60a5fa, 0 0 10px #93c5fd; }
+  75% { text-shadow: 0 0 3px #fff, 0 0 8px #3b82f6, 0 0 12px #60a5fa; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.sparkle-link {
+  animation: sparkle 2s infinite alternate, float 3s infinite ease-in-out;
+}
+</style>
         </p>
 
         <!-- <!-- Flyer Image -->
