@@ -32,10 +32,26 @@
     <!-- ================= CONTENT SECTION ================= -->
     <section class="py-12 px-6 text-center">
         <!-- Title -->
-        <h1 class="text-gray-900 text-4xl sm:text-5xl font-serif tracking-wide mb-6 sm:mb-8
-           transform transition-all duration-500 hover:scale-110 hover:text-blue-700 cursor-pointer">
+        <h1 class="text-5xl sm:text-6xl font-serif font-bold tracking-wide text-center mb-8 animate-gradient cursor-pointer">
     Public Lecture
 </h1>
+
+<style>
+/* Gradient text animation */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background: linear-gradient(90deg, #3b82f6, #9333ea, #facc15, #ef4444, #10b981);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 5s ease infinite;
+}
+</style>
 
         <!-- Registration Link -->
         <p class="text-xl text-gray-800 max-w-4xl mx-auto leading-relaxed">
