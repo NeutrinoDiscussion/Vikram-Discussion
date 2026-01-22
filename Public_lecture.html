@@ -4,143 +4,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Neutrino Physics: Oscillations, Mass and Beyond</title>
+    <title>Public Lecture | Neutrino Physics</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-[#f8f5f2]">
-    <!-- Navbar -->
-    <nav class="bg-gray-800">
-        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div class="relative flex h-16 items-center justify-between">
-                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                    <button id="menu-toggle" type="button"
-                        class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-none focus:ring-inset"
-                        aria-controls="mobile-menu" aria-expanded="false">
-                        <span class="absolute -inset-0.5"></span>
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
-                        <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                    <div class="flex shrink-0 items-center">
-                        <a href="index.html">
-                            <img class="h-8 w-auto"
-                                src="https://www.prl.res.in/prl-eng/sites/default/files/images/prl_logo/prl-logo-200x200.png"
-                                alt="PRL">
-                        </a>
-                        <a href="index.html">
-                            <h2 class="rounded-md text-blue-600 px-3 py-2 text-sm font-medium">Physical Research Laboratory</h2>
-                        </a>
 
-                    </div>
-                    <div class="hidden sm:ml-6 sm:block">
-                        <div class="flex space-x-4">
-                            <a href="index.html" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
-                                aria-current="page">Home</a>
-                            <a href="schedule.html"
-                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Schedule</a>
-                            <a href="speakers.html"
-                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Speakers</a>
-                            <a href="participants.html"
-                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Participants</a>
-                            <a href="venue.html"
-                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Venue</a>
-                            <a href="stay.html"
-                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Stay</a>
-                            <a href="Public_lecture.html"
-                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Public Lecture</a>
-                        </div>
+<!-- ================= NAVBAR ================= -->
+<nav class="bg-gray-800">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                <button id="menu-toggle" type="button"
+                    class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white">
+                    <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                <div class="flex items-center">
+                    <a href="index.html">
+                        <img class="h-8 w-auto"
+                            src="https://www.prl.res.in/prl-eng/sites/default/files/images/prl_logo/prl-logo-200x200.png"
+                            alt="PRL">
+                    </a>
+                    <h2 class="text-blue-600 px-3 py-2 text-sm font-medium">
+                        Physical Research Laboratory
+                    </h2>
+                </div>
+
+                <div class="hidden sm:ml-6 sm:block">
+                    <div class="flex space-x-4">
+                        <a href="index.html" class="rounded-md px-3 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white">Home</a>
+                        <a href="schedule.html" class="rounded-md px-3 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white">Schedule</a>
+                        <a href="speakers.html" class="rounded-md px-3 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white">Speakers</a>
+                        <a href="participants.html" class="rounded-md px-3 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white">Participants</a>
+                        <a href="venue.html" class="rounded-md px-3 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white">Venue</a>
+                        <a href="stay.html" class="rounded-md px-3 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white">Stay</a>
+                        <a href="Public_lecture.html" class="rounded-md bg-gray-900 px-3 py-2 text-sm text-white">Public Lecture</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="sm:hidden hidden" id="mobile-menu">
-            <div class="space-y-1 px-2 pt-2 pb-3">
-                <a href="index.html" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
-                    aria-current="page">Home</a>
-                <a href="schedule.html"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Schedule</a>
-                <a href="speakers.html"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Speakers</a>
-                <a href="participants.html"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Participants</a>
-                <a href="venue.html"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Venue</a>
-                <a href="stay.html"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Stay</a>
-                 <a href="Public_lecture.html"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Public_lecture</a>
-            </div>
+    </div>
+</nav>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="relative h-[80vh] bg-cover bg-center"
+    style="background-image: url('neutrino_vd_full_26.png');">
+
+    <div class="absolute inset-0 bg-black/40"></div>
+
+    <div class="relative z-10 flex h-full items-center justify-center">
+        <div class="border-4 border-white px-12 py-6">
+            <h1 class="text-white text-5xl font-serif tracking-wide">
+                Public Lecture
+            </h1>
         </div>
-    </nav>
-     <meta charset="UTF-8">
-  <title>Public Lecture</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </div>
+</section>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: "Georgia", serif;
-      background-color: #f5f5f5;
-    }
-
-
-  <!-- HERO IMAGE -->
-                .hero {
-      height: 85vh;
-      background-image: url("neutrino_vd_full_26.png"); /* change if needed */
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 60px;
-    }
-                .hero-title {
-      border: 3px solid white;
-      padding: 25px 60px;
-      color: white;
-      font-size: 48px;
-      letter-spacing: 1px;
-      background: rgba(0, 0, 0, 0.3);
-    }
-  <section class="hero">
-    <div class="hero-title">Public Lecture</div>
-  </section>
-
-  <!-- CONTENT -->
-  <section class="content">
-    <p>
-      Due to the seating arrangements in the auditorium, you are requested to
-      pre-register for the public lecture.
-      <br><br>
-      <a href="#" target="_blank">Please click here to register yourself</a>
+<!-- ================= CONTENT ================= -->
+<section class="bg-[#e9e4de] py-12 px-6 text-center">
+    <p class="text-xl text-gray-800 max-w-4xl mx-auto leading-relaxed">
+        Due to the seating arrangements in the auditorium, you are requested to
+        pre-register for the public lecture.
+        <br><br>
+        <a href="#" class="text-blue-700 font-semibold hover:underline">
+            Please click here to register yourself
+        </a>
     </p>
-  </section>
+</section>
 
-    <footer class="w-full py-14">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto">
+<!-- ================= FOOTER ================= -->
+<footer class="w-full py-14">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <ul
+            class="text-lg flex items-center justify-center flex-col gap-6 md:flex-row md:gap-10 py-10 border-t border-gray-300">
+            <li><a href="index.html" class="text-gray-800 hover:text-gray-900">Home</a></li>
+            <li><a href="schedule.html" class="text-gray-800 hover:text-gray-900">Schedule</a></li>
+            <li><a href="speakers.html" class="text-gray-800 hover:text-gray-900">Speakers</a></li>
+            <li><a href="participants.html" class="text-gray-800 hover:text-gray-900">Participants</a></li>
+            <li><a href="venue.html" class="text-gray-800 hover:text-gray-900">Venue</a></li>
+            <li><a href="stay.html" class="text-gray-800 hover:text-gray-900">Stay</a></li>
+            <li><a href="Public_lecture.html" class="text-gray-800 hover:text-gray-900">Public Lecture</a></li>
+        </ul>
+    </div>
+</footer>
 
-                <ul
-                    class="text-lg flex items-center justify-center flex-col gap-7 md:flex-row md:gap-12 transition-all duration-500 py-16 mb-10 border-b border-gray-200">
-                    <li><a href="index.html" class="text-gray-800 hover:text-gray-900">Home</a></li>
-                    <li><a href="schedule.html" class=" text-gray-800 hover:text-gray-900">Schedule</a></li>
-                    <li><a href="speakers.html" class=" text-gray-800 hover:text-gray-900">Speakers</a></li>
-                    <li><a href="participants.html" class=" text-gray-800 hover:text-gray-900">Participants</a></li>
-                    <li><a href="venue.html" class=" text-gray-800 hover:text-gray-900">Venue</a></li>
-                    <li><a href="stay.html" class=" text-gray-800 hover:text-gray-900">Stay</a></li>
-                    <li><a href="Public_lecture.html" class=" text-gray-800 hover:text-gray-900">Public_lecture</a></li>
-
-                </ul>
 </body>
 </html>
