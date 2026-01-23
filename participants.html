@@ -85,12 +85,16 @@
     </nav>
 
     <script>
-        document
-            .getElementById("menu-toggle")
-            .addEventListener("click", function () {
-                const menu = document.getElementById("mobile-menu");
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("mobile-menu");
+
+        if (toggle && menu) {
+            toggle.addEventListener("click", function () {
                 menu.classList.toggle("hidden");
             });
+        }
+    });
     </script>
     <div class="py-10 w-full text-center">
         <h2 class="text-[#5c4033] text-4xl font-bold mb-6">Participants</h2>
