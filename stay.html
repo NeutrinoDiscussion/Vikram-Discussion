@@ -56,7 +56,7 @@
                             <a href="stay.html"
                                 class="rounded-md px-3 bg-gray-900 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Stay</a>
                             <a href="Public_lecture.html"
-                                class="rounded-md px-3 bg-gray-900 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Public_lecture</a>
+                                class="rounded-md px-3 bg-gray-900 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Public Lecture</a>
                         </div>
                     </div>
                 </div>
@@ -76,71 +76,95 @@
                 <a href="stay.html"
                     class="block rounded-md px-3 py-2 text-base bg-gray-900 font-medium text-gray-300">Stay</a>
                 <a href="Public_lecture.html"
-                    class="block rounded-md px-3 py-2 text-base bg-gray-900 font-medium text-gray-300">Public_lecture</a>
+                    class="block rounded-md px-3 py-2 text-base bg-gray-900 font-medium text-gray-300">Public Lecture</a>
             </div>
         </div>
     </nav>
 
     <script>
-        document
-            .getElementById("menu-toggle")
-            .addEventListener("click", function () {
-                const menu = document.getElementById("mobile-menu");
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("mobile-menu");
+    
+        if (toggle && menu) {
+            toggle.addEventListener("click", function () {
                 menu.classList.toggle("hidden");
             });
+        }
+    });
     </script>
 
-    <div class="py-10 w-full text-center">
+    <div class="container mx-auto py-10 px-6 text-center">
         <h2 class="text-[#5c4033] text-4xl font-bold mb-6">Accommodation</h2>
         <p class="text-[#8b5a2b] text-lg">
             Details of accommodation for attendees.
         </p>
-        <div class="bg-white shadow-lg p-6 w-full max-w-2xl mx-auto mt-6">
+    
+        <!-- Guest House: Thaltej Campus -->
+        <div class="bg-white shadow-lg p-6 w-full max-w-4xl mx-auto mt-10">
             <h4 class="text-center text-2xl text-[#5c4033] font-bold mb-4">
-                1. Guest House Address
+                1. Guest House Address (Thaltej Campus)
             </h4>
-            <p class="text-[#8b5a2b] text-lg text-center">
+    
+            <p class="text-[#8b5a2b] text-lg text-center mb-4">
                 PRL Thaltej Campus, besides Research Scholars Hostel<br />
                 <strong>Physical Research Laboratory</strong><br />
                 Opposite Gotila Garden, Sindhu Bhavan Road,<br />
                 Near Pakwan Char Rasta, 380054<br />
-                (Known As Thaltej Campus, 8 km from PRL Main Campus)
+                <span class="italic">(~8 km from PRL Main Campus)</span>
             </p>
-            <div class="text-center mt-4">
-                <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded">
-                   
-                    <a href="https://maps.app.goo.gl/TbaAK3XbH6GXnu4G9"
-                    >Get
-                    Directions</a>
-                </button>
+    
+            <div class="text-center mb-6">
+                <a href="https://maps.app.goo.gl/TbaAK3XbH6GXnu4G9"
+                   target="_blank"
+                   class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded">
+                    Get Directions
+                </a>
             </div>
-            <div class="mt-6 w-full">
+    
+            <div class="w-full overflow-hidden rounded-lg">
                 <iframe
+                    title="PRL Thaltej Campus Guest House Map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.5013753632!2d72.4909335819683!3d23.042073342574017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b6631090dcd%3A0x8b20d8c27844196b!2sPRL-Guest%20house%2C%20PRL%20Colony%2C%20Thaltej%2C%20Ahmedabad%2C%20Gujarat%20380058!5e0!3m2!1sen!2sin!4v1740316548157!5m2!1sen!2sin"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    class="w-full h-[300px] md:h-[450px] border-0"
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
         </div>
-        <!-- PRL Main Campus -->
-        <div class="bg-white shadow-lg p-6 w-full max-w-2xl mx-auto mt-6">
-            <h4 class="text-center text-2xl text-[#5c4033] font-bold mb-4">2. Guest House Address (PRL Main Campus)</h4>
-            <p class="text-[#8b5a2b] text-lg text-center">
+    
+        <!-- Guest House: PRL Main Campus -->
+        <div class="bg-white shadow-lg p-6 w-full max-w-4xl mx-auto mt-10">
+            <h4 class="text-center text-2xl text-[#5c4033] font-bold mb-4">
+                2. Guest House Address (PRL Main Campus)
+            </h4>
+    
+            <p class="text-[#8b5a2b] text-lg text-center mb-4">
                 PRL Main Campus, PRL Residences<br />
                 <strong>Physical Research Laboratory</strong><br />
-                Opposite IIM (opposite IIM Residences),<br />
-                Navarangpura, 380015<br />
-                (Walkable distance from PRL Main Campus)
+                Opposite IIM (IIM Residences),<br />
+                Navrangpura, 380015<br />
+                <span class="italic">(Walkable from PRL Main Campus)</span>
             </p>
-            <div class="text-center mt-4">
+    
+            <div class="text-center mb-6">
                 <a href="https://maps.app.goo.gl/3M4Z6obhXfCrgjFEA"
-                    class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded">Get
-                    Directions</a>
+                   target="_blank"
+                   class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded">
+                    Get Directions
+                </a>
             </div>
-            <div class="mt-6 w-full">
+    
+            <div class="w-full overflow-hidden rounded-lg">
                 <iframe
+                    title="PRL Main Campus Guest House Map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.7607254014315!2d72.53581857492561!3d23.032556079166728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85000f05a8e9%3A0x142ec9589a0d64f1!2sPRL%20Navrangpura%20Guest%20House!5e0!3m2!1sen!2sin!4v1740316707793!5m2!1sen!2sin"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    class="w-full h-[300px] md:h-[450px] border-0"
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
         </div>
     </div>
@@ -157,7 +181,7 @@
                     <li><a href="participants.html" class=" text-gray-800 hover:text-gray-900">Participants</a></li>
                     <li><a href="venue.html" class=" text-gray-800 hover:text-gray-900">Venue</a></li>
                     <li><a href="stay.html" class=" text-gray-800 hover:text-gray-900">Stay</a></li>
-                    <li><a href="Public_lecture.html" class=" text-gray-800 hover:text-gray-900">Public_lecture</a></li>
+                    <li><a href="Public_lecture.html" class=" text-gray-800 hover:text-gray-900">Public Lecture</a></li>
 
                 </ul>
                 <div class="flex space-x-10 justify-center items-center mb-14">
