@@ -58,7 +58,7 @@
                             <a href="stay.html"
                                 class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Stay</a>
                             <a href="Public_lecture.html"
-                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Public_lecture</a>
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Public Lecture</a>
                         </div>
                     </div>
                 </div>
@@ -79,18 +79,22 @@
                 <a href="stay.html"
                     class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Stay</a>
                 <a href="Public_lecture.html"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Public_lecture</a>
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Public Lecture</a>
             </div>
         </div>
     </nav>
 
     <script>
-        document
-            .getElementById("menu-toggle")
-            .addEventListener("click", function () {
-                const menu = document.getElementById("mobile-menu");
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("mobile-menu");
+
+        if (toggle && menu) {
+            toggle.addEventListener("click", function () {
                 menu.classList.toggle("hidden");
             });
+        }
+    });
     </script>
     <div class="container mx-auto py-10 px-6 text-center">
         <h2 class="text-[#5c4033] text-4xl font-bold mb-6">Venue</h2>
@@ -111,7 +115,40 @@
             <p><strong>Contact:</strong> neutrino.prl@gmail.com </p>
         </div>
     </div>
+    <!-- PRL Venue Map -->
+    <div class="container mx-auto px-6">
+        <div class="bg-white shadow-lg p-6 w-full max-w-4xl mx-auto mt-10">
+            <h3 class="text-center text-2xl text-[#5c4033] font-bold mb-4">
+                Physical Research Laboratory – Main Campus
+            </h3>
 
+            <p class="text-[#8b5a2b] text-lg text-center mb-4">
+                <strong>Physical Research Laboratory (PRL)</strong><br />
+                Navrangpura, Ahmedabad – 380009<br />
+                Gujarat, India
+            </p>
+
+            <div class="text-center mb-6">
+                <a href="https://maps.app.goo.gl/kS9pFHZ4Fckn6XKp6"
+                   target="_blank"
+                   class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded">
+                    Get Directions
+                </a>
+            </div>
+
+            <div class="w-full overflow-hidden rounded-lg">
+                <iframe
+                    title="PRL Main Campus Location Map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.723083305962!2d72.5346528749256!3d23.033755179165864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85000f05a8e9%3A0x2d3b78b019f5bb1c!2sPhysical%20Research%20Laboratory!5e0!3m2!1sen!2sin!4v1740317200000!5m2!1sen!2sin"
+                    class="w-full h-[300px] md:h-[450px] border-0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+    
     <footer class="w-full py-14">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="max-w-3xl mx-auto">
@@ -124,7 +161,7 @@
                     <li><a href="participants.html" class=" text-gray-800 hover:text-gray-900">Participants</a></li>
                     <li><a href="venue.html" class=" text-gray-800 hover:text-gray-900">Venue</a></li>
                     <li><a href="stay.html" class=" text-gray-800 hover:text-gray-900">Stay</a></li>
-                    <li><a href="Public_lecture.html" class=" text-gray-800 hover:text-gray-900">Public_lecture</a></li>
+                    <li><a href="Public_lecture.html" class=" text-gray-800 hover:text-gray-900">Public Lecture</a></li>
 
                 </ul>
                 <div class="flex space-x-10 justify-center items-center mb-14">
