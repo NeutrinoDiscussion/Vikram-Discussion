@@ -47,17 +47,18 @@
                                 aria-current="page">Home</a>
                             <a href="schedule.html"
                                 class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Schedule</a>
-                            <a href="speakers.html"
-                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Speakers</a>
+                            <!-- <a href="speakers.html"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Speakers</a> -->
+                            <a href="Public_lecture.html"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Public Lecture</a>
+                   
                             <a href="participants.html"
                                 class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Participants</a>
                             <a href="venue.html"
                                 class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Venue</a>
                             <a href="stay.html"
                                 class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Stay</a>
-                            <a href="Public_lecture.html"
-                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Public_lecture</a>
-                        </div>
+                                 </div>
                     </div>
                 </div>
             </div>
@@ -68,25 +69,32 @@
                     aria-current="page">Home</a>
                 <a href="schedule.html"
                     class="block bg-gray-900 rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Schedule</a>
-                <a href="speakers.html"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Speakers</a>
+                <!-- <a href="speakers.html"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Speakers</a> -->
+                <a href="Public_lecture.html"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Public Lecture</a>
                 <a href="participants.html"
                     class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Participants</a>
                 <a href="venue.html"
                     class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Venue</a>
                 <a href="stay.html"
                     class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Stay</a>
-                <a href="Public_lecture.html"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Public_lecture</a>
+                
             </div>
         </div>
     </nav>
 
     <script>
-        document.getElementById('menu-toggle').addEventListener('click', function () {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        });
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("mobile-menu");
+
+        if (toggle && menu) {
+            toggle.addEventListener("click", function () {
+                menu.classList.toggle("hidden");
+            });
+        }
+    });
     </script>
 
     <div class="py-5 w-full">
@@ -115,17 +123,16 @@
                         <span class="text-[#8b5a2b] font-bold">10:30 AM - 11:15 AM</span>
                         <span class="text-[#8b5a2b] font-bold">Amol Dighe</span>
                         <span> Supernova Neutrino Oscillations: What do we understand?
-                            <a href="talk_poonam.pdf" target="_blank" class="inline-flex items-center ml-2">
+                            <!-- <a href="talk_poonam.pdf" target="_blank" class="inline-flex items-center ml-2">
                                 <img src="icon-pdf.png" alt="PDF" class="w-5 h-5">
-                            </a> 
+                            </a>  -->
                         </span>
                         <span class="text-[#8b5a2b] font-bold">11:15 AM - 11:35 AM</span>
                         <span class="text-[#8b5a2b] font-bold">Susobhan Chattopadhyay</span>
-                        <span>
-                            Refractive neutrino masses in the solar DM halo: Can the dark-LMA solution be revived?
-                            <a href="talk_ranjan.pdf" target="_blank" class="inline-flex items-center ml-2">
+                        <span> Refractive neutrino masses in the solar DM halo: Can the dark-LMA solution be revived?
+                            <!-- <a href="talk_ranjan.pdf" target="_blank" class="inline-flex items-center ml-2">
                                 <img src="icon-pdf.png" alt="PDF" class="w-5 h-5">
-                            </a> 
+                            </a>  -->
                         </span>
                         <span class="text-[#8b5a2b] font-bold">11:35 AM - 12:00 PM</span>
                         <span class="text-[#8b5a2b] font-bold"> </span>
@@ -133,18 +140,17 @@
                         
                         <span class="text-[#8b5a2b] font-bold">12:00 PM - 12:20 PM</span>
                         <span class="text-[#8b5a2b] font-bold">Anil Kumar</span>
-                        <span>First Constraints on Long-Range Neutrino Interactions using IceCube DeepCore
-                            <a href="talk_ranjan.pdf" target="_blank" class="inline-flex items-center ml-2">
+                        <span> First Constraints on Long-Range Neutrino Interactions using IceCube DeepCore
+                            <!-- <a href="talk_ranjan.pdf" target="_blank" class="inline-flex items-center ml-2">
                                 <img src="icon-pdf.png" alt="PDF" class="w-5 h-5">
-                            </a> 
+                            </a>  -->
                         </span>
-                        <span class="text-[#8b5a2b] font-bold">12:20 PM - 12:40 APM</span>
+                        <span class="text-[#8b5a2b] font-bold">12:20 PM - 12:40 PM</span>
                         <span class="text-[#8b5a2b] font-bold">Lakshmi S Mohan</span>
-                        <span>
-                            
-                            <a href="talk_ranjan.pdf" target="_blank" class="inline-flex items-center ml-2">
+                        <span> TBA
+                            <!-- <a href="talk_ranjan.pdf" target="_blank" class="inline-flex items-center ml-2">
                                 <img src="icon-pdf.png" alt="PDF" class="w-5 h-5">
-                            </a> 
+                            </a>  -->
                         </span>
                         
                         <span class="text-[#8b5a2b] font-bold">12:40 PM - 13:00 PM</span>
@@ -161,18 +167,17 @@
                         <span class="text-[#8b5a2b] font-bold"> </span>
                         <span class="text-[#8b5a2b] font-bold">14:30 PM - 15:15 PM</span>
                         <span class="text-[#8b5a2b] font-bold">Sanjib Agarwala</span>
-                        <span>
-                            Stringent constraints to date on non-standard neutrino interactions using IceCube DeepCore
-                            <a href="talk_supriya.pdf" target="_blank" class="inline-flex items-center ml-2">
+                        <span> Stringent constraints to date on non-standard neutrino interactions using IceCube DeepCore
+                            <!-- <a href="talk_supriya.pdf" target="_blank" class="inline-flex items-center ml-2">
                                 <img src="icon-pdf.png" alt="PDF" class="w-5 h-5">
-                            </a> 
+                            </a>  -->
                         </span>
                         <span class="text-[#8b5a2b] font-bold">15:15 PM - 15:35 PM</span>
                         <span class="text-[#8b5a2b] font-bold">Dharitree Benboruah</span>
-                        <span>Scalar NSI and neutrino oscillations
-                            <a href="talk_supriya.pdf" target="_blank" class="inline-flex items-center ml-2">
+                        <span> Scalar NSI and neutrino oscillations
+                            <!-- <a href="talk_supriya.pdf" target="_blank" class="inline-flex items-center ml-2">
                                 <img src="icon-pdf.png" alt="PDF" class="w-5 h-5">
-                            </a> 
+                            </a>  -->
                         </span>
                         <span class="text-[#8b5a2b] font-bold">15:35 PM - 16:00 PM</span>
                         <span class="text-[#8b5a2b] font-bold"> </span>
@@ -183,25 +188,20 @@
                         <span class="mx-2">☕ Tea + Biscuits</span>
                     </div>
                     <div class="grid grid-cols-3 py-3 px-6 bg-[#f7d154] text-center">
-                        <span class="text-[#8b5a2b] font-bold"> </span>
-                        
-                        <span class="mx-2 font-bold">Public Lecture Session [Auditorium]</span>
-                        <span class="text-[#8b5a2b] font-bold"> </span>
-                        <a href="Public_lecture.html" target="_blank" class="inline-flex items-center ml-2">
-                                <img src="icon-pdf.png" alt="PDF" class="w-5 h-5">
-                            </a>
-                     
-                        <span class="text-[#8b5a2b] font-bold">16:30 PM - 18:00 PM</span>
-                        <span class="text-[#8b5a2b] font-bold">Prof. Srubabati Goswami</span>
-                        <span> Catch me if you can: Chasing the Neutrinos
-                            <a href="talk_mansi.pdf" target="_blank" class="inline-flex items-center ml-2">
-                                <img src="icon-pdf.png" alt="PDF" class="w-5 h-5">
-                            </a> 
-                       <a href="Public Lecture.html"
-                    class="block bg-gray-900 rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Public Lecture</a>
-                        <span class="text-[#8b5a2b] font-bold"> 
-                    </div>
-            
+                        <span></span>
+                        <span class="mx-2 font-bold">
+                            Public Lecture Session [K.R. Ramanathan Auditorium]
+                        </span>
+                        <span></span>
+
+                        <span class="text-[#8b5a2b] font-bold">4:30 PM – 6:00 PM</span>
+                        <span class="text-[#8b5a2b] font-bold">Srubabati Goswami</span>
+                        <span>Catch me if you can: Chasing the Neutrinos
+                            <!-- <a href="Public_lecture.html" target="_blank" class="inline-flex items-center ml-2">
+                                <img src="icon-pdf.png" alt="Details" class="w-5 h-5">
+                            </a> -->
+                         </span>
+                    </div>           
 
             <!-- Day 2 -->
             <div class="bg-white shadow-lg p-6 w-full">
@@ -213,20 +213,18 @@
                         <span class="mx-2 font-bold">Technical Session 3 [GFL]</span>
                         <span class="text-[#8b5a2b] font-bold"> </span>
                         <span class="text-[#8b5a2b] font-bold">9:30 AM - 10:15 AM</span>
-                        <span class="text-[#8b5a2b] font-bold">S. Umasankar</span>
-                        <span>
-                            Neutrino Mass Models and Charged Lepton Flavour Violation
-                            <a href="talk_yyyw.pdf" target="_blank" class="inline-flex items-center ml-2">
+                        <span class="text-[#8b5a2b] font-bold">S. Uma Sankar</span>
+                        <span> Neutrino Mass Models and Charged Lepton Flavour Violation
+                            <!-- <a href="talk_yyyw.pdf" target="_blank" class="inline-flex items-center ml-2">
                                 <img src="icon-pdf.png" alt="PDF" class="w-5 h-5">
-                            </a> 
+                            </a>  -->
                         </span>
                          <span class="text-[#8b5a2b] font-bold">10:15 AM - 10:35 AM</span>
                         <span class="text-[#8b5a2b] font-bold">Jai More</span>
-                        <span>
-                            Charged Lepton Flavor Violation from A4 Flavor Symmetry
-                            <a href="talk_yyyw.pdf" target="_blank" class="inline-flex items-center ml-2">
+                        <span> Charged Lepton Flavor Violation from A4 Flavor Symmetry
+                            <!-- <a href="talk_yyyw.pdf" target="_blank" class="inline-flex items-center ml-2">
                                 <img src="icon-pdf.png" alt="PDF" class="w-5 h-5">
-                            </a> 
+                            </a>  -->
                         </span>
                         <span class="text-[#8b5a2b] font-bold">10:35 AM - 11:00 AM</span>
                         <span class="text-[#8b5a2b] font-bold"> </span>
@@ -242,19 +240,17 @@
                         <span class="text-[#8b5a2b] font-bold"> </span>
                         <span class="text-[#8b5a2b] font-bold">11:30 AM - 12:15 PM</span>
                         <span class="text-[#8b5a2b] font-bold">Sudhir Vempati</span>
-                        <span>
-                            Flavour from Fractal like Mass chains
-                            <a href="talk_ujjal.pdf" target="_blank" class="inline-flex items-center ml-2">
+                        <span> Flavour from Fractal like Mass chains
+                            <!-- <a href="talk_ujjal.pdf" target="_blank" class="inline-flex items-center ml-2">
                                 <img src="icon-pdf.png" alt="PDF" class="w-5 h-5">
-                            </a>
+                            </a> -->
                         </span>
                         <span class="text-[#8b5a2b] font-bold">12:15 PM - 12:35 PM</span>
                         <span class="text-[#8b5a2b] font-bold">Adarsh Singh</span>
-                        <span>
-                            Structured Mixings from Randomness
-                            <a href="talk_anna.pdf" target="_blank" class="inline-flex items-center ml-2">
+                        <span> Structured Mixings from Randomness
+                            <!-- <a href="talk_anna.pdf" target="_blank" class="inline-flex items-center ml-2">
                                 <img src="icon-pdf.png" alt="PDF" class="w-5 h-5">
-                            </a>
+                            </a> -->
                         </span>
                         <span class="text-[#8b5a2b] font-bold">12:35 PM - 1:00 PM</span>
                         <span class="text-[#8b5a2b] font-bold"> </span>
@@ -270,18 +266,17 @@
                         <span class="text-[#8b5a2b] font-bold"> </span>
                         <span class="text-[#8b5a2b] font-bold"> 14:30 PM - 15:15 PM</span>
                         <span class="text-[#8b5a2b] font-bold">Rahul Srivastava</span>
-                        <span>
-                           Accidental Symmetries of Standard Model
-                            <a href="talk_basudeb.pdf" target="_blank" class="inline-flex items-center ml-2">
+                        <span> Accidental Symmetries of Standard Model
+                            <!-- <a href="talk_basudeb.pdf" target="_blank" class="inline-flex items-center ml-2">
                                 <img src="icon-pdf.png" alt="PDF" class="w-5 h-5">
-                            </a>
+                            </a> -->
                         </span>
                         <span class="text-[#8b5a2b] font-bold">15:15 PM - 15:35 PM</span>
-                        <span class="text-[#8b5a2b] font-bold">K. N. Vishnudath</span>
-                        <span>
-                            <a href="talk_indrajit.pdf" target="_blank" class="inline-flex items-center ml-2">
+                        <span class="text-[#8b5a2b] font-bold">Mansi Dhuria</span>
+                        <span> TBA
+                            <!-- <a href="talk_indrajit.pdf" target="_blank" class="inline-flex items-center ml-2">
                                 <img src="icon-pdf.png" alt="PDF" class="w-5 h-5">
-                            </a>
+                            </a> -->
                         </span>
                         <span class="text-[#8b5a2b] font-bold">15:35 PM - 16:00 PM</span>
                         <span class="text-[#8b5a2b] font-bold"> </span>
@@ -297,19 +292,17 @@
                         <span class="text-[#8b5a2b] font-bold"> </span>
                         <span class="text-[#8b5a2b] font-bold"> 16:30 PM - 17:15 PM</span>
                         <span class="text-[#8b5a2b] font-bold">Manimala Mitra</span>
-                        <span>
-                            Neutrinos as Experimental Windows to New Physics
-                            <a href="talk_pratik.pdf" target="_blank" class="inline-flex items-center ml-2">
+                        <span> Neutrinos as Experimental Windows to New Physics
+                            <!-- <a href="talk_pratik.pdf" target="_blank" class="inline-flex items-center ml-2">
                                 <img src="icon-pdf.png" alt="PDF" class="w-5 h-5">
-                            </a>
+                            </a> -->
                         </span>
                         <span class="text-[#8b5a2b] font-bold">17:15 PM - 17:35 PM</span>
                         <span class="text-[#8b5a2b] font-bold">Debasish Pachhar</span>
-                        <span>
-                            
-                            <a href="talk_ranjini.pdf" target="_blank" class="inline-flex items-center ml-2">
+                        <span> TBA
+                            <!-- <a href="talk_ranjini.pdf" target="_blank" class="inline-flex items-center ml-2">
                                 <img src="icon-pdf.png" alt="PDF" class="w-5 h-5">
-                            </a>
+                            </a> -->
                         </span>
                         <span class="text-[#8b5a2b] font-bold">17:35 PM - 18:00 PM</span>
                         <span class="text-[#8b5a2b] font-bold"> </span>
@@ -329,19 +322,17 @@
                         <span class="text-[#8b5a2b] font-bold"> </span>
                         <span class="text-[#8b5a2b] font-bold">09:30 AM - 10:15 AM</span>
                         <span class="text-[#8b5a2b] font-bold">Sudip Jana</span>
-                        <span>
-                            Gravitational Wave Signature and the Nature of Neutrino Masses: Majorana, Dirac, or Pseudo-Dirac?
-                            <a href="talk_rajgandhi.pdf" target="_blank" class="inline-flex items-center ml-2">
+                        <span> Gravitational Wave Signature and the Nature of Neutrino Masses: Majorana, Dirac, or Pseudo-Dirac?
+                            <!-- <a href="talk_rajgandhi.pdf" target="_blank" class="inline-flex items-center ml-2">
                                 <img src="icon-pdf.png" alt="PDF" class="w-5 h-5">
-                            </a>
+                            </a> -->
                         </span>
                         <span class="text-[#8b5a2b] font-bold">10:15 AM - 10:35 AM</span>
-                        <span class="text-[#8b5a2b] font-bold">Sudip Ghosh</span>
-                        <span>
-                            
-                            <a href="talk_rajgandhi.pdf" target="_blank" class="inline-flex items-center ml-2">
+                        <span class="text-[#8b5a2b] font-bold">Sumit Ghosh</span>
+                        <span> Light scalar mediated NSI in neutrino oscillation experiments
+                            <!-- <a href="talk_rajgandhi.pdf" target="_blank" class="inline-flex items-center ml-2">
                                 <img src="icon-pdf.png" alt="PDF" class="w-5 h-5">
-                            </a>
+                            </a> -->
                         </span>
                         <span class="text-[#8b5a2b] font-bold">10:35 AM - 11:00 AM</span>
                         <span class="text-[#8b5a2b] font-bold"> </span>
@@ -357,27 +348,24 @@
                         <span class="text-[#8b5a2b] font-bold"> </span>
                         <span class="text-[#8b5a2b] font-bold">11:30 AM - 11:50 AM</span>
                         <span class="text-[#8b5a2b] font-bold">Supriya Pan</span>
-                        <span>
-                            
-                            <a href="talk_bhavesh.pdf" target="_blank" class="inline-flex items-center ml-2">
+                        <span> Neutrino Mass-ordering Sensitivity in JUNO
+                            <!-- <a href="talk_bhavesh.pdf" target="_blank" class="inline-flex items-center ml-2">
                                 <img src="icon-pdf.png" alt="PDF" class="w-5 h-5">
-                            </a>
+                            </a> -->
                         </span>
                         <span class="text-[#8b5a2b] font-bold">11:50 AM - 12:10 PM</span>
                         <span class="text-[#8b5a2b] font-bold">Priya Mishra</span>
-                        <span>
-                            Neutrino mass and Gravitational waves in U(1)X framework
-                            <a href="talk_animesh.pdf" target="_blank" class="inline-flex items-center ml-2">
+                        <span> Neutrino mass and Gravitational waves in U(1)X framework
+                            <!-- <a href="talk_animesh.pdf" target="_blank" class="inline-flex items-center ml-2">
                                 <img src="icon-pdf.png" alt="PDF" class="w-5 h-5">
-                            </a>
+                            </a> -->
                         </span>
                         <span class="text-[#8b5a2b] font-bold">12:10 PM - 12:30 PM</span>
                         <span class="text-[#8b5a2b] font-bold">Subham Saha</span>
-                        <span>
-                            
-                            <a href="talk_bhavya.pdf" target="_blank" class="inline-flex items-center ml-2">
+                        <span> TBA
+                            <!-- <a href="talk_bhavya.pdf" target="_blank" class="inline-flex items-center ml-2">
                                 <img src="icon-pdf.png" alt="PDF" class="w-5 h-5">
-                            </a>
+                            </a> -->
                         </span>
                         <span class="text-[#8b5a2b] font-bold">12:30 PM - 13:00 PM</span>
                         <span class="text-[#8b5a2b] font-bold"> </span>
@@ -393,13 +381,13 @@
                         <span class="text-[#8b5a2b] font-bold"> </span>
                         <span class="text-[#8b5a2b] font-bold">14:00 PM - 14:45 PM</span>
                         <span class="text-[#8b5a2b] font-bold">Srubabati Goswami</span>
-                        <span>
-                            Summary and future aspects of neutrino oscillation physics
-                            <a href="talk_sudip.pdf" target="_blank" class="inline-flex items-center ml-2">
+                        <span> Summary and future aspects of neutrino oscillation physics
+                            <!-- <a href="talk_sudip.pdf" target="_blank" class="inline-flex items-center ml-2">
                                 <img src="icon-pdf.png" alt="PDF" class="w-5 h-5">
-                            </a>
+                            </a> -->
                         </span>
                         <span class="text-[#8b5a2b] font-bold">14:45 PM - 15:55 PM</span>
+                        <span class="text-[#8b5a2b] font-bold">All Participants</span>
                         <span class="text-[#8b5a2b] font-bold"> </span>
                         <span> Discussions </span>
                         <span class="text-[#8b5a2b] font-bold">15:55 PM - 16:00 PM</span>
@@ -426,11 +414,12 @@
                     class="text-lg flex items-center justify-center flex-col gap-7 md:flex-row md:gap-12 transition-all duration-500 py-16 mb-10 border-b border-gray-200">
                     <li><a href="index.html" class="text-gray-800 hover:text-gray-900">Home</a></li>
                     <li><a href="schedule.html" class=" text-gray-800 hover:text-gray-900">Schedule</a></li>
-                    <li><a href="speakers.html" class=" text-gray-800 hover:text-gray-900">Speakers</a></li>
+                    <!-- <li><a href="speakers.html" class=" text-gray-800 hover:text-gray-900">Speakers</a></li> -->
+                     <li><a href="Public_lecture.html" class=" text-gray-800 hover:text-gray-900">Public Lecture</a></li>
                     <li><a href="participants.html" class=" text-gray-800 hover:text-gray-900">Participants</a></li>
                     <li><a href="venue.html" class=" text-gray-800 hover:text-gray-900">Venue</a></li>
                     <li><a href="stay.html" class=" text-gray-800 hover:text-gray-900">Stay</a></li>
-                    <li><a href="Public_lecture.html" class=" text-gray-800 hover:text-gray-900">Public_lecture</a></li>
+                   
 
                 </ul>
                 <div class="flex space-x-10 justify-center items-center mb-14">
