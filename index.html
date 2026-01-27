@@ -86,21 +86,16 @@
     </nav>
 
     <script>
-        const btn = document.getElementById("menu-toggle");
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.getElementById("menu-toggle");
         const menu = document.getElementById("mobile-menu");
-        const icons = btn.querySelectorAll("svg");
 
-        btn.addEventListener("click", () => {
-            menu.classList.toggle("hidden");
-            icons[0].classList.toggle("hidden");
-            icons[1].classList.toggle("hidden");
-
-            // Toggle page credit movement
-            credit.classList.toggle("translate-y-12");  // slide down
-            credit.classList.toggle("opacity-0");       // fade out
-            credit.classList.toggle("translate-y-0");   // slide up (back)
-            credit.classList.toggle("opacity-100");     // fade in
-        });
+        if (toggle && menu) {
+            toggle.addEventListener("click", function () {
+                menu.classList.toggle("hidden");
+            });
+        }
+    });
     </script>
 
     <!-- Hero Section -->
