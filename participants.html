@@ -47,16 +47,17 @@
                                 aria-current="page">Home</a>
                             <a href="schedule.html"
                                 class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Schedule</a>
-                            <a href="speakers.html"
-                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Speakers</a>
+                            <!-- <a href="speakers.html"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Speakers</a> -->
+                            <a href="Public_lecture.html"
+                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Public Lecture</a>
                             <a href="participants.html"
                                 class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Participants</a>
                             <a href="venue.html"
                                 class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Venue</a>
                             <a href="stay.html"
                                 class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Stay</a>
-                            <a href="Public_lecture.html"
-                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Public_lecture</a>
+                            
                         </div>
                     </div>
                 </div>
@@ -68,27 +69,32 @@
                     aria-current="page">Home</a>
                 <a href="schedule.html"
                     class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Schedule</a>
-                <a href="speakers.html"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Speakers</a>
+                <!-- <a href="speakers.html"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Speakers</a> -->
+                <a href="Public_lecture.html"
+                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Public Lecture</a>
                 <a href="participants.html"
                     class="block bg-gray-900 rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Participants</a>
                 <a href="venue.html"
                     class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Venue</a>
                 <a href="stay.html"
                     class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Stay</a>
-                <a href="Public_lecture.html"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Public_lecture</a>
+                
             </div>
         </div>
     </nav>
 
     <script>
-        document
-            .getElementById("menu-toggle")
-            .addEventListener("click", function () {
-                const menu = document.getElementById("mobile-menu");
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("mobile-menu");
+
+        if (toggle && menu) {
+            toggle.addEventListener("click", function () {
                 menu.classList.toggle("hidden");
             });
+        }
+    });
     </script>
     <div class="py-10 w-full text-center">
         <h2 class="text-[#5c4033] text-4xl font-bold mb-6">Participants</h2>
@@ -99,149 +105,160 @@
     <!-- Programme and Planning Details -->
     <div class="bg-white shadow-lg p-6 w-full rounded-lg">
         <div class="w-full">
-            <div class="py-3 px-6 bg-[#ffe599] font-bold text-center">
-                <span class="text-[#8b5a2b]">Prof. Amol Dighe, TIFR, Mumbai</span>
-            </div>
-            <div class="py-3 px-6 bg-[#f7d154] font-bold text-center">
-                <span class="text-[#8b5a2b] font-bold"> Prof. Sudhir Vempati, IISC, Bangalore</span>
+            <div class="py-4 px-6 bg-[#d9ead3] font-bold text-center text-[#5c4033]">
+                Participants from Other Institutes
             </div>
             <div class="py-3 px-6 bg-[#ffe599] font-bold text-center">
-                <span class="text-[#8b5a2b]">Dr. Poonam Mehta, JNU </span>
+                <span class="text-[#8b5a2b]">Amol Dighe, TIFR, Mumbai</span>
             </div>
             <div class="py-3 px-6 bg-[#f7d154] font-bold text-center">
-                <span class="text-[#8b5a2b] font-bold">Dr. Manimala Mitra, IOP Bhubaneswar</span>
+                <span class="text-[#8b5a2b] font-bold">Sudhir Vempati, IISC, Bangalore</span>
             </div>
             <div class="py-3 px-6 bg-[#ffe599] font-bold text-center">
-                <span class="text-[#8b5a2b]">Prof. Sanjib Kumar Agarwalla, IOP Bhubaneswar</span>
+                <span class="text-[#8b5a2b]">Mansi Dhuria, PDEU gandhinagar</span>
             </div>
             <div class="py-3 px-6 bg-[#f7d154] font-bold text-center">
-                <span class="text-[#8b5a2b] font-bold"> Dr. K.N Vishnudath, VIT Chennai (TBC)</span>
+                <span class="text-[#8b5a2b] font-bold">Manimala Mitra, Institute of Physics, Bhubaneswar</span>
             </div>
             <div class="py-3 px-6 bg-[#ffe599] font-bold text-center">
-                <span class="text-[#8b5a2b]"> Prof. Sankagiri Umasankar, IIT Bombay</span>
+                <span class="text-[#8b5a2b]">Sanjib Kumar Agarwalla, Institute of Physics, Bhubaneswar</span>
+            </div>
+             <div class="py-3 px-6 bg-[#f7d154] font-bold text-center">
+                <span class="text-[#8b5a2b] font-bold">Priya Mishra, University of Hyderabad</span>
+            </div> 
+            <div class="py-3 px-6 bg-[#ffe599] font-bold text-center">
+                <span class="text-[#8b5a2b]">S. Uma Sankar, IIT Bombay</span>
             </div>
             <div class="py-3 px-6 bg-[#f7d154] font-bold text-center">
-                <span class="text-[#8b5a2b] font-bold"> Jai more , IIT Bombay</span>
+                <span class="text-[#8b5a2b] font-bold">Jai more, IIT Bombay</span>
             </div>
             <div class="py-3 px-6 bg-[#ffe599] font-bold text-center">
-                <span class="text-[#8b5a2b]">Dr. Sudip Jana, Harish-Chandra Research Institute</span>
+                <span class="text-[#8b5a2b]">Sudip Jana, Harish-Chandra Research Institute, Allahabad</span>
             </div>
             <div class="py-3 px-6 bg-[#f7d154] font-bold text-center">
-                <span class="text-[#8b5a2b] font-bold"> Lakshmi S Mohan, University of Silesia in Katowice</span>
+                <span class="text-[#8b5a2b] font-bold">Lakshmi S Mohan, University of Silesia in Katowice</span>
             </div>
             <div class="py-3 px-6 bg-[#ffe599] font-bold text-center">
                 <span class="text-[#8b5a2b]">Dharitree Bezboruah, Tezpur University </span>
             </div>
             <div class="py-3 px-6 bg-[#f7d154] font-bold text-center">
-                <span class="text-[#8b5a2b] font-bold"> Sushobhan CHATTOPADHYAY, TIFR, Mumbai</span>
+                <span class="text-[#8b5a2b] font-bold">Susobhan Chattopadhyay, TIFR, Mumbai</span>
             </div>
             <div class="py-3 px-6 bg-[#ffe599] font-bold text-center">
-                <span class="text-[#8b5a2b]">Dr. Supriya Pan, Universida Católica del Norte, Chile </span>
+                <span class="text-[#8b5a2b]">Supriya Pan, Universidad Católica del Norte, Chile</span>
             </div>
             <div class="py-3 px-6 bg-[#f7d154] font-bold text-center">
-                <span class="text-[#8b5a2b] font-bold">Aadarsh Singh, IISc</span>
+                <span class="text-[#8b5a2b] font-bold">Aadarsh Singh, IISc, Bhubaneswar</span>
             </div>
             <div class="py-3 px-6 bg-[#ffe599] font-bold text-center">
                 <span class="text-[#8b5a2b]">Subham Saha, IOP Bhubaneswar</span>
             </div>
             <div class="py-3 px-6 bg-[#f7d154] font-bold text-center">
-                <span class="text-[#8b5a2b] font-bold"> Sumit Ghosh, </span>
+                <span class="text-[#8b5a2b] font-bold"> Sumit Ghosh, NIT Bhopal </span>
             </div>
             <div class="py-3 px-6 bg-[#ffe599] font-bold text-center">
-                <span class="text-[#8b5a2b]">Dr. Anil Kumar, </span>
+                <span class="text-[#8b5a2b]">Anil Kumar, Institute of Physics, Bhubaneswar</span>
             </div>
             <div class="py-3 px-6 bg-[#f7d154] font-bold text-center">
-                <span class="text-[#8b5a2b] font-bold">Mr. Indrajit Ghose, SNBNCBS </span>
+                <span class="text-[#8b5a2b] font-bold">Rahul Srivastava, IISER-Bhopal </span>
+            </div>
+            <div class="py-4 px-6 bg-[#cfe2f3] font-bold text-center text-[#5c4033]">
+                Local Participants
             </div>
             <div class="py-3 px-6 bg-[#ffe599] text-center">
-                <span class="text-[#8b5a2b] ">Prof. Srubabati Goswami, PRL</span>
+                <span class="text-[#8b5a2b] ">Srubabati Goswami, PRL</span>
+            </div>
             </div>
             <div class="py-3 px-6 bg-[#f7d154] text-center">
-                <span class="text-[#8b5a2b]">Prof. S. D. Rindani, PRL</span>
-            </div>
-            <div class="py-3 px-6 bg-[#ffe599] text-center">
-                <span class="text-[#8b5a2b]">Prof. Anjan Josipura, PRL</span>
+                <span class="text-[#8b5a2b]">A. R. Prasanna, PRL</span>
             </div>
             <div class="py-3 px-6 bg-[#f7d154] text-center">
-                <span class="text-[#8b5a2b]">Prof. Kumar Bhatt, PRL</span>
+                <span class="text-[#8b5a2b]">S. D. Rindani, PRL</span>
             </div>
             <div class="py-3 px-6 bg-[#ffe599] text-center">
-                <span class="text-[#8b5a2b]">Prof. V.K.B. Kota, PRL</span>
+                <span class="text-[#8b5a2b]">Anjan Josipura, PRL</span>
             </div>
-
+            <div class="py-3 px-6 bg-[#f7d154] text-center">
+                <span class="text-[#8b5a2b]">Kumar Bhatt, PRL</span>
+            </div>
+            <div class="py-3 px-6 bg-[#ffe599] text-center">
+                <span class="text-[#8b5a2b]">V.K.B. Kota, PRL</span>
+            </div>
+            <div class="py-3 px-6 bg-[#f7d154] text-center">
+                <span class="text-[#8b5a2b]">Namit Mahajan, PRL</span>
+            </div>
+            <div class="py-3 px-6 bg-[#ffe599] text-center">
+                <span class="text-[#8b5a2b]">Partha Konar, PRL</span>
+            </div>
+            <div class="py-3 px-6 bg-[#f7d154] text-center">
+                <span class="text-[#8b5a2b]">Navinder Singh, PRL</span>
+            </div>
+            <div class="py-3 px-6 bg-[#ffe599] text-center">
+                <span class="text-[#8b5a2b]">Ketan Patel, PRL</span>
+            </div>
+            <div class="py-3 px-6 bg-[#f7d154] text-center">
+                <span class="text-[#8b5a2b]">Paramita Dutta, PRL</span>
+            </div>
+            <div class="py-3 px-6 bg-[#ffe599] text-center">
+                <span class="text-[#8b5a2b]">Satyajit Seth, PRL</span>
+            </div>
+            <div class="py-3 px-6 bg-[#f7d154] text-center">
+                <span class="text-[#8b5a2b]">Udit Khanna, PRL</span>
+            </div>
+            <div class="py-3 px-6 bg-[#ffe599] text-center">
+                <span class="text-[#8b5a2b]">Chandrodoy Chattopadhyay, PRL</span>
+            </div>
+            <div class="py-3 px-6 bg-[#f7d154] text-center">
+                <span class="text-[#8b5a2b]">Jacky Kumar, PRL</span>
+            </div>
             
+            <div class="py-3 px-6 bg-[#ffe599] text-center">
+                <span class="text-[#8b5a2b]">Debashis Pachhar, PRL</span>
+            </div>
             <div class="py-3 px-6 bg-[#f7d154] text-center">
-                <span class="text-[#8b5a2b]">Prof. Namit Mahajan, PRL</span>
+                <span class="text-[#8b5a2b]">Deepanshu Srivastava, PRL</span>
             </div>
             <div class="py-3 px-6 bg-[#ffe599] text-center">
-                <span class="text-[#8b5a2b]">Prof. Partha Konar, PRL</span>
+                <span class="text-[#8b5a2b]">Shivam Verma, PRL</span>
             </div>
             <div class="py-3 px-6 bg-[#f7d154] text-center">
-                <span class="text-[#8b5a2b]">Prof. Navinder Singh, PRL</span>
+                <span class="text-[#8b5a2b]">Chandrima Sen, PRL</span>
             </div>
             <div class="py-3 px-6 bg-[#ffe599] text-center">
-                <span class="text-[#8b5a2b]">Dr. Ketan Patel, PRL</span>
+                <span class="text-[#8b5a2b]">Monal Kashav, PRL</span>
             </div>
             <div class="py-3 px-6 bg-[#f7d154] text-center">
-                <span class="text-[#8b5a2b]">Dr. Paramita Dutta, PRL</span>
+                <span class="text-[#8b5a2b]">Chinmoy Dey, PRL</span>
+            </div>
+         <div class="py-3 px-6 bg-[#f7d154] text-center">
+                <span class="text-[#8b5a2b]">Sougata Biswas, PRL</span>
             </div>
             <div class="py-3 px-6 bg-[#ffe599] text-center">
-                <span class="text-[#8b5a2b]">Dr. Satyajit Seth PRL</span>
+                <span class="text-[#8b5a2b]">Abbas Tinwala, PRL</span>
             </div>
             <div class="py-3 px-6 bg-[#f7d154] text-center">
-                <span class="text-[#8b5a2b]">Dr. Udit Khanna, PRL</span>
+                <span class="text-[#8b5a2b]">Bharathi Ganesh, PRL</span>
             </div>
             <div class="py-3 px-6 bg-[#ffe599] text-center">
-                <span class="text-[#8b5a2b]">Dr. Chandrodoy Chattopadhyay, PRL</span>
+                <span class="text-[#8b5a2b]">Namit Kamani Patel, PRL</span>
             </div>
             <div class="py-3 px-6 bg-[#f7d154] text-center">
-                <span class="text-[#8b5a2b]">Dr. Jacky Kumar, PRL</span>
-            </div>
-            
-            <div class="py-3 px-6 bg-[#ffe599] text-center">
-                <span class="text-[#8b5a2b]">Dr. Debashis Pachhar, PRL</span>
-            </div>
-            <div class="py-3 px-6 bg-[#f7d154] text-center">
-                <span class="text-[#8b5a2b]">Dr. Deepanshu Srivastava, PRL</span>
+                <span class="text-[#8b5a2b]">Shuvendu Roy, PRL</span>
             </div>
             <div class="py-3 px-6 bg-[#ffe599] text-center">
-                <span class="text-[#8b5a2b]">Dr. Shivam Verma, PRL</span>
+                <span class="text-[#8b5a2b]">Achintyaa, PRL</span>
             </div>
             <div class="py-3 px-6 bg-[#f7d154] text-center">
-                <span class="text-[#8b5a2b]">Dr. Chandrima Sen, PRL</span>
+                <span class="text-[#8b5a2b]">Khushi Singla, PRL</span>
             </div>
             <div class="py-3 px-6 bg-[#ffe599] text-center">
-                <span class="text-[#8b5a2b]">Dr. Monal Kashav, PRL</span>
+                <span class="text-[#8b5a2b]">Shivam, PRL</span>
             </div>
             <div class="py-3 px-6 bg-[#f7d154] text-center">
-                <span class="text-[#8b5a2b]">Dr. Chinmoy Dey, PRL</span>
-            </div>
-            <div class="py-3 px-6 bg-[#ffe599] text-center">
-                <span class="text-[#8b5a2b]">Dr. Abbas Tinwala, PRL</span>
-            </div>
-            <div class="py-3 px-6 bg-[#f7d154] text-center">
-                <span class="text-[#8b5a2b]">Dr. Bharathi Ganesh, PRL</span>
-            </div>
-            <div class="py-3 px-6 bg-[#ffe599] text-center">
-                <span class="text-[#8b5a2b]">Mr. Namit Kamani Patel, PRL</span>
-            </div>
-            <div class="py-3 px-6 bg-[#f7d154] text-center">
-                <span class="text-[#8b5a2b]">Mr. Shuvendu Roy, PRL</span>
-            </div>
-            <div class="py-3 px-6 bg-[#ffe599] text-center">
-                <span class="text-[#8b5a2b]">Ms. Achintyaa, PRL</span>
-            </div>
-            <div class="py-3 px-6 bg-[#f7d154] text-center">
-                <span class="text-[#8b5a2b]">Ms. Khushi Singla, PRL</span>
-            </div>
-            <div class="py-3 px-6 bg-[#ffe599] text-center">
-                <span class="text-[#8b5a2b]">Mr. Shivam, PRL</span>
-            </div>
-            <div class="py-3 px-6 bg-[#f7d154] text-center">
-                <span class="text-[#8b5a2b]">Mr. Saurabh Kumar Thakur, PRL</span>
+                <span class="text-[#8b5a2b]">Saurabh Kumar Thakur, PRL</span>
         </div>
             <div class="py-3 px-6 bg-[#ffe599] text-center">
-                <span class="text-[#8b5a2b]">Mr. Sai Prasad Sunil Kumar, PRL</span>
+                <span class="text-[#8b5a2b]">Sai Prasad Sunil Kumar, PRL</span>
             </div>
     </div>
 
@@ -253,11 +270,12 @@
                     class="text-lg flex items-center justify-center flex-col gap-7 md:flex-row md:gap-12 transition-all duration-500 py-16 mb-10 border-b border-gray-200">
                     <li><a href="index.html" class="text-gray-800 hover:text-gray-900">Home</a></li>
                     <li><a href="schedule.html" class=" text-gray-800 hover:text-gray-900">Schedule</a></li>
-                    <li><a href="speakers.html" class=" text-gray-800 hover:text-gray-900">Speakers</a></li>
+                    <!-- <li><a href="speakers.html" class=" text-gray-800 hover:text-gray-900">Speakers</a></li> -->
+                     <li><a href="Public_lecture.html" class=" text-gray-800 hover:text-gray-900">Public Lecture</a></li>
                     <li><a href="participants.html" class=" text-gray-800 hover:text-gray-900">Participants</a></li>
                     <li><a href="venue.html" class=" text-gray-800 hover:text-gray-900">Venue</a></li>
                     <li><a href="stay.html" class=" text-gray-800 hover:text-gray-900">Stay</a></li>
-                    <li><a href="Public_lecture.html" class=" text-gray-800 hover:text-gray-900">Public Lecture</a></li>
+                   
 
                 </ul>
                 <div class="flex space-x-10 justify-center items-center mb-14">
